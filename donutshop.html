@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Donuts For Days</title>
   <meta charset="UTF-8">
+  <marquee behavior="scroll" direction="left"><img src="http://farm2.static.flickr.com/1171/908799774_7b31b75d14.jpg" style="width:300px;height:250px">
+  </marquee>
+  <title>Donuts For Days</title>
+  <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css">
+  <link rel="stylesheet" type="text/css" href="donutstyle.css">
 </head>
 <body>
   <header>
-    <h1><em>Donuts For Days</em></h1>
-    <h2>Diggin Donuts in the 206 Since the Jump</h2>
+    <h1>Donuts For Days: 206 Since the Jump</h1>
   </header>
   <section>
-    <p><em>This is a model that tracks Top Pot donuts around Seattle</em>
-    </p>
+    <h3>This is a model that tracks Top Pot donuts around Seattle</h3>
   </section>
-  <main id="content"></main>
-    <table>
-      <tr><th style="font-family: Arial; font-size: 16px"></th><td style="font-family: Arial; font-size: 16px; "> 6 AM </td><td style="font-family: Arial; font-size: 16px"> 7 AM </td><td style="font-family: Arial; font-size: 16px"> 8 AM </td><td style="font-family: Arial; font-size: 16px"> 9 AM </td><td style="font-family: Arial; font-size: 16px"> 10 AM </td><td style="font-family: Arial; font-size: 16px"> 11 PM </td><td style="font-family: Arial; font-size: 16px"> 12 PM </td><td style="font-family: Arial; font-size: 16px"> 1 PM </td><td style="font-family: Arial; font-size: 16px"> 2 PM </td><td style="font-family: Arial; font-size: 16px"> 3 PM </td><td style="font-family: Arial; font-size: 16px"> 4 PM </td><td style="font-family: Arial; font-size: 16px"> 5 PM </td><td style="font-family: Arial; color: Red; font-size: 18px">Total</td></tr>
-      <tr id="shop1"><th style="font-family: Arial; color: green">Downtown</th></tr>
-      <tr id="shop2"><th style="font-family: Arial; color: green">Capitol Hill</th></tr>
-      <tr id="shop3"><th style="font-family: Arial; color: green">South Lake Union</th></tr>
-      <tr id="shop4"><th style="font-family: Arial; color: green">Wedgewood</th></tr>
-      <tr id="shop5"><th style="font-family: Arial; color: green">Ballard</th></tr>
+  <main>
+    <table id="donuts">
+      <tr>
+        <th>Location</th>
+        <th>7:00 AM</th>
+        <th>8:00 AM</th>
+        <th>9:00 AM</th>
+        <th>10:00 AM</th>
+        <th>11:00 AM</th>
+        <th>12:00 PM</th>
+        <th>1:00 PM</th>
+        <th>2:00 PM</th>
+        <th>3:00 PM</th>
+        <th>4:00 PM</th>
+        <th>5:00 PM</th>
+        <th>6:00 PM</th>
+        <th>Daily Total</th>
+      </tr>
     </table>
-  <script type="text/javascript" src="donutshop.js"></script>
+    <p>Input the data below to see how many donuts to make at each Top Pot</p>
+    <form id="newForm">
+      <label for="locationTop">New Shop Name</label>
+      <input id="locationTop" type="text" name="location">
+      <br></br>
+      <label for="minCust">Minimum Customers An Hour</label>
+      <input id="minCust" type="text" name="minimum">
+      <br></br>
+      <label for="maxCust">Maximum Customers An Hour</label>
+      <input id="maxCust" type="text" name="maximum">
+      <br></br>
+      <label for="averagePerCust">Average Donuts A Customer</label>
+      <input id="averagePerCust" type="text" name="average">
+      <button type="submit">Create New Top Pot</button>
+    </form>
+  </main>
+  <script src="main.js"></script>
+  <script src="events.js"></script>
 </body>
 </html>
