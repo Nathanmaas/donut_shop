@@ -1,0 +1,39 @@
+body {
+  background-color: #B9FFDD; font-family: 'Jeju Gothic';
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Jeju Gothic';
+  color: #B1514E;
+  text-align: center;
+}
+
+table {
+  border:3px solid #FF48C3;
+  text-align: center;
+  margin: 0 auto;
+}
+
+tr {
+  background-color: #63FF7E ;
+}
+
+th {
+  :3px solid #FF48C3;
+}
+
+form {
+  background-color: #FFDDF5;
+  text-align: center;
+}
+
+button {
+  font-family: 'Jeju Gothic';
+  background-color: #AB9FB1;
+}
+
+
+
+
+
