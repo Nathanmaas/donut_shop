@@ -1,5 +1,5 @@
     (function() {
-     var TopPot = function (locationTop, minCust, maxCust, averagePerCust) {
+      TopPot = function (locationTop, minCust, maxCust, averagePerCust) {
       this.locationTop = locationTop;
       this.minCust = minCust;
       this.maxCust = maxCust;
