@@ -42,12 +42,12 @@
           var elHour = document.createElement('td');
           elHour.textContent = this.donArray[i];
           elRow.appendChild(elHour);
-      }
+          }
 
         var eltotal = document.createElement('th');
         eltotal.textContent = perDay;
         elRow.appendChild(eltotal);
-      }
+        }
 
         var downtown = new TopPot ('Downtown', 8, 43, 4.50);
         var capitolHill = new TopPot ('Capitol Hill', 4, 47, 2.0);
