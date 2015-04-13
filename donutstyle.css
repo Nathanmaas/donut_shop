@@ -1,15 +1,24 @@
+p {
+  position: fixed;
+  font-family: 'jeju Gothic';
+  color: blue;
+  text-align: center;
+}
 body {
+  position: absolute;
   background-color: #B9FFDD; font-family: 'Jeju Gothic';
   text-align: center;
 }
 
 h1 {
+  position: relative;
   font-family: 'Jeju Gothic';
   color: #B1514E;
-  text-align: center;
+
 }
 
 table {
+  position: relative;
   border:3px solid #FF48C3;
   text-align: center;
   margin: 0 auto;
@@ -24,6 +33,7 @@ th {
 }
 
 form {
+  position: relative;
   background-color: #FFDDF5;
   text-align: center;
 }
@@ -32,6 +42,8 @@ button {
   font-family: 'Jeju Gothic';
   background-color: #AB9FB1;
 }
+
+
 
 
 
